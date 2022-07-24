@@ -4,14 +4,13 @@
   "main": "build/withWatermelonDB.js",
   "types": "build/withWatermelonDB.d.ts",
   "scripts": {
-    "build": "expo-module build",
+    "build": "CI=1 expo-module build -m CommonJS",
     "clean": "expo-module clean",
     "test": "expo-module test",
     "lint": "expo-module lint",
     "prepare": "expo-module prepare",
     "prepublishOnly": "expo-module prepublishOnly",
-    "expo-module": "expo-module",
-    "postinstall": "CI=1 npm run build -m CommonJS"
+    "expo-module": "expo-module"
   },
   "license": "MIT",
   "files": [
