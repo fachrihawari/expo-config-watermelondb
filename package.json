@@ -11,7 +11,7 @@
     "prepare": "expo-module prepare",
     "prepublishOnly": "expo-module prepublishOnly",
     "expo-module": "expo-module",
-    "postinstall": "expo-module build"
+    "postinstall": "CI=1 expo-module build"
   },
   "license": "MIT",
   "files": [
